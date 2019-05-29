@@ -1,0 +1,36 @@
+@media( max-width : 585px ) {
+.hero .pt-5 img{
+	display: none;
+}
+.hero h1 {
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 3rem;
+}
+}
+@media( max-width : 989px ) {
+.hero .pt-5 img{
+	display: none;
+}
+.hero h1 {
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 3rem;
+}
+}
+@media( max-width : 220px ){
+.hero .pt-5 img{
+	display: none;
+}
+.hero h1 {
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 3rem;
+}
+}
+
+
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/

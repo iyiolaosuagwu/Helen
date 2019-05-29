@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,800,900');
+/*variable selection ------------*/
+
+
+:root {
+  --theme-helen: #3585DD !important;
+  --theme-body: #fff !important;
+  --theme-gradient: linear-gradient(237.13deg, #55A6FF 21.44%, #0754A9 94.95%) !important;
+  --theme-border-grey: #dbdfe0;
+  --theme-base: #d1ddf1;
+ /* --theme-blue: #3F4C79;
+  --theme-yellow: #F8BE13;*/
+}
+
+::selection {
+  background: var(--theme-helen);
+  color: #fff;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: var(--theme-helen);
+  color: #fff;
+  /* Gecko Browsers */
+}
+::placeholder { color: #c5c5c5 !important; font-weight: 300 !important }
+
+/*--------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 0.02s ease;
+  -moz-transition: all 0.02s ease;
+  -ms-transition: all 0.02s ease;
+  -o-transition: all 0.02s ease;
+  transition: all 0.02s ease; }
+
+body {
+  background: var(--theme-body) !important;
+  padding-right: 0px !important;
+  -webkit-transition: all 0.02s ease;
+  -moz-transition: all 0.02s ease;
+  -ms-transition: all 0.02s ease;
+  -o-transition: all 0.02s ease;
+  transition: all 0.02s ease;
+
+  font-family: 'Poppins', sans-serif; }
+
+a, h1, h2, h3, h4, h5, h6, p, button, input[type="text"], input[type="date"], input[type="password"], input[type="value"], b, label, td, select, textarea, th {
+  font-family: 'Poppins', sans-serif; }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+ 
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.47rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9375rem;
+}
+
+/*h6 {
+  font-size: 1.1rem;
+}*/
+a {
+  font-size: 0.871rem;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none;
+  color: var(--theme-helen);
+}
+a:visited {
+    color: inherit !important;
+}
+p,
+
+input,
+.btn {
+  font-size: 0.9575rem;
+}
+
+/*-----------*/
+/*general css calls for theming*/
+.theme-helen{
+  color: var(--theme-helen);
+}
+.theme-body{
+  color: var(--theme-body);
+}
+
+.theme-border{
+  color: var(--theme-border-grey);
+}
+
+
+/*-------*/
+/*Cards ,margins, inputs and button*/
+
+.btn-helen{
+  border: none;
+  border-radius: 0px;
+  background: var(--theme-gradient);
+  padding: 9px 44px;
+  color: #fff;
+}
+.btn-helen-default{
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.08);
+  border: solid 0.5px #ebebeb;
+  background-color: #ffffff;
+  color: #000
+
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 2.3rem;
+}
+.btn-pace-default:hover{
+  opacity: .8;
+  color: #000
+}
+.card-tabs{
+   box-shadow: inset 0 -0.5px 0 0 #dbdfe0;
+   background: var(--theme-body);
+   padding: 1.25rem 1.25rem 0.5rem;
+}
+.btn-pace:hover{
+  opacity: .8;
+  color: #fff
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero{
+  .navbar-brand{
+    padding-left: 0rem ;
+    img{
+      height: 58px;
+    }
+  }
+  .bg-light {
+    background-color: transparent !important;
+  }
+
+    /*padding-top: 3rem;*/
+    min-height: 47rem;
+
+    background: #eff6ff;
+
+  h1{
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 5rem;
+
+  }
+  p{
+    line-height: 1.58;
+    margin: .5rem 0rem;
+    font-weight: 200;
+
+  }
+  .pt-5{
+    margin-top:1rem;
+  }
+}
+.mt-7{
+  margin-top: 5rem;
+}
+.explainAi{
+  margin-top: 5rem !important;
+  background: var(--theme-base);
+  padding: 7rem 0px;
+  h2{
+    font-weight: 700;
+    line-height: 1.6;
+    margin-top: 6rem;
+  }
+  p{
+    line-height: 1.8;
+  }
+}
+.ourservice{
+  padding-top: 3rem;
+  svg{
+    /*height: 70px;*/
+    margin-bottom: 1rem;
+    height: 3.5rem;
+    /* margin: 0; */
+    width: 4rem;
+    path{
+      fill: var(--theme-helen);
+    }
+  }
+  h2{
+    font-weight: 700;
+    line-height: 1.7;
+    
+  }
+  .card{
+    margin-bottom: 2rem;
+    border: none;
+    background: #fff;
+    padding: 1rem 0px 0rem;
+    img{
+      height: 70px;
+      margin-bottom: 1rem;
+    }
+    h4{
+      font-weight: 700;
+      line-height: 2;
+      color: var(--theme-helen);
+      margin-bottom: 3px;
+      font-size: 1.3rem;
+    }
+    p{
+      line-height: 1.6
+    }
+  }
+}
+.contactus{
+  padding-top: 9rem;
+  h2{
+    margin-bottom: 4px;
+  }
+  input{
+    box-shadow: none !important;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  textarea{
+     box-shadow: none !important;
+     margin-bottom: 1rem;
+     resize: none;
+  }
+
+}
+.chatbubble{
+  background: var(--theme-helen);
+    padding: 11px 30px 1px;
+    width: 77%;
+    color: #fff;
+    word-break: break-all;
+    margin-top: 1rem;
+    clear: both;
+    float: left;
+    border-radius: 0px 10px 10px 10px;
+    &-reply {
+        background: red;
+        padding: 11px 30px 1px;
+        width: 77%;
+        float: right;
+        margin-top: 1rem;
+        background: var(--theme-base);
+
+        word-break: break-all;
+        border-radius: 10px 0px 10px 10px;
+    }
+}
+.chatmessage{
+      border-radius: 50px;
+    font-size: 14px;
+    padding: 21px;
+
+}
+
+footer{
+  margin-top: 9rem;
+  /*border-top: 1px solid #ddd;*/
+  padding:4rem 0px;
+  background: var(--theme-base);
+  i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--theme-helen);
+  }
+  h4{
+    color: var(--theme-helen);
+    margin-bottom: 4px;
+  }
+  p{
+    line-height: 1.7
+  }
+}
